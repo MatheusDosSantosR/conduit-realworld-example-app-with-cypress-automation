@@ -9,6 +9,7 @@ function FormFieldset({
   required,
   type,
   value,
+  dataCy,
 }) {
   return (
     <fieldset className="form-group">
@@ -22,6 +23,7 @@ function FormFieldset({
         required={required}
         type={type}
         value={value}
+        data-cy={dataCy}
       />
       {children}
     </fieldset>

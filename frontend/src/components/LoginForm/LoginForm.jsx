@@ -30,6 +30,7 @@ function LoginForm({ onError }) {
       <FormFieldset
         type="email"
         name="email"
+        dataCy="sign-email"
         required
         placeholder="Email"
         value={email}
@@ -40,13 +41,14 @@ function LoginForm({ onError }) {
       <FormFieldset
         name="password"
         type="password"
+        dataCy="sign-password"
         required
         placeholder="Password"
         value={password}
         handler={inputHandler}
         minLength="5"
       ></FormFieldset>
-      <button className="btn btn-lg btn-primary pull-xs-right">Login</button>
+      <button className="btn btn-lg btn-primary pull-xs-right" data-cy="sign-login">Login</button>
     </form>
   );
 }
